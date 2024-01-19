@@ -13412,7 +13412,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 427bdc4897ff1624ba954499b13f3577, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  moveSpeed: 5000
+  moveSpeed: 5
   animator: {fileID: 400021806}
   x: 0
   y: 0

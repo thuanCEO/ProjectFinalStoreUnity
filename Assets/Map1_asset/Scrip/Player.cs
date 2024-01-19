@@ -6,57 +6,50 @@ using UnityEngine;
 
 public class Player : MonoBehaviour
 {
-    public float moveSpeed =  5f;
-    
-    private Rigidbody2D rb;
-
+    public float moveSpeed = 5f;
     public Animator animator;
-
-    public float x, y;
+    public Vector3 moveInput;
+    private Rigidbody2D rb;
     private bool isWalking;
-    private Vector3 moveDir;
-
-    private void Start()
+    // Start is called before the first frame update
+    void Start()
     {
+        animator = GetComponent<Animator>();
         rb = GetComponent<Rigidbody2D>();
+
     }
 
-    private void Update()
+    // Update is called once per frame
+    void Update()
     {
-        x = Input.GetAxisRaw("Horizontal");
-        y = Input.GetAxisRaw("Vertical");
-        moveDir = new Vector3(x, y, 0f).normalized;
-        rb.velocity = moveDir * moveSpeed * Time.deltaTime;
+        moveInput.x = Input.GetAxis("Horizontal");
+        moveInput.y = Input.GetAxis("Vertical");
+        transform.position += moveInput * moveSpeed * Time.deltaTime;
 
-        if (x != 0  || y != 0)
+
+        if (moveInput.x != 0 || moveInput.y != 0)
         {
-            animator.SetFloat("X", x);
-            animator.SetFloat("Y", y);
-            animator.SetFloat("Speed", moveDir.sqrMagnitude);
-            if(!isWalking)
+            animator.SetFloat("X", moveInput.x);
+            animator.SetFloat("Y", moveInput.y);
+            if (!isWalking)
             {
+
                 isWalking = true;
-                animator.SetBool("IsMoving", isWalking);              
-            }
-        }
-        else
-        {
-            if(isWalking)
-            {
-                isWalking = false;
                 animator.SetBool("IsMoving", isWalking);
-                StopMoving();
             }
+            else
+            {
+                if (isWalking)
+                {
+                    isWalking = false;
+                    animator.SetBool("IsMoving", isWalking);
+                    StopMoving();
+                }
+            }
+
         }
-
-        moveDir = new Vector3(x, y).normalized;
+        animator.SetFloat("Speed", moveInput.sqrMagnitude);
     }
-
-    private void fixUpdate()
-    {
-        
-    }
-
     private void StopMoving()
     {
         rb.velocity = Vector3.zero;
