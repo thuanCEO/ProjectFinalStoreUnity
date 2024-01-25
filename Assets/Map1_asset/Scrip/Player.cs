@@ -13,15 +13,18 @@ public class Player : MonoBehaviour
     private bool isWalking;
     private bool isAttacking = false;
     private AttackArea attackArea;
+    private float attackDelay = 0.5f;
+    private float lastAttackTime;
 
     // Start is called before the first frame update
     void Start()
     {
         attackArea = transform.GetChild(0).GetComponent<AttackArea>();
+        attackArea.DisableAttackArea();
+
         animator = GetComponent<Animator>();
         rb = GetComponent<Rigidbody2D>();
 
-        attackArea.DisableAttackArea();
         GameObject playerContainer = new GameObject("PlayerContainer");
 
         transform.parent = playerContainer.transform;
@@ -43,11 +46,12 @@ public class Player : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        if (Input.GetKeyDown(KeyCode.J) && !isAttacking)
+        if (Input.GetKeyDown(KeyCode.J) && !isAttacking && Time.time - lastAttackTime >= attackDelay)
         {
             isAttacking = true;
             animator.SetBool("IsAttacking", isAttacking);
             attackArea.EnableAttackArea();
+            lastAttackTime = Time.time;
         }
         moveInput.x = Input.GetAxis("Horizontal");
         moveInput.y = Input.GetAxis("Vertical");
