@@ -2,20 +2,29 @@ using System;
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.UI;
+using TMPro;
 
 public class Health : MonoBehaviour
 {
-    [SerializeField] private int health = 100;
+    
+    [SerializeField] int maxHealth ;
+    int currentHealth;
+    public HealthBar healthBar;
 
-    private int MAX_HEALTH = 100;
-
+    private void Start()
+    {
+        currentHealth = maxHealth;
+        healthBar.UpdateBar(currentHealth, maxHealth);
+    }
     private void Update()
     {
         if (Input.GetKeyDown(KeyCode.K))
         {
-            Heal(20);
+            Damage(20);
         }
     }
+    
 
     public void Damage(int amount)
     {
@@ -24,29 +33,17 @@ public class Health : MonoBehaviour
             throw new ArgumentOutOfRangeException("Can not have negative Damage");
         }
 
-        this.health -= amount;
-        if (health <= 0)
+        currentHealth -= amount;
+        if (currentHealth <= 0)
         {
+            currentHealth = 0;
             Die();
         }
+        healthBar.UpdateBar(currentHealth, maxHealth);
+
     }
 
-    public void Heal(int amount)
-    {
-        if (amount < 0)
-        {
-            throw new ArgumentOutOfRangeException("Can not have negative Healing");
-        }
 
-        if (health + amount <= MAX_HEALTH)
-        {
-            health += amount;
-        }
-        else
-        {
-            health = MAX_HEALTH;
-        }
-    }
     public void Die()
     {
         
