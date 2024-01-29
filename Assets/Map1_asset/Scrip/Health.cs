@@ -11,6 +11,8 @@ public class Health : MonoBehaviour
     [SerializeField] int maxHealth ;
     int currentHealth;
     public HealthBar healthBar;
+    //public GameObject DamageText;
+
 
     private void Start()
     {
@@ -34,7 +36,7 @@ public class Health : MonoBehaviour
         {
             throw new ArgumentOutOfRangeException("Can not have negative Damage");
         }
-
+        //Instantiate(DamageText, transform.position, Quaternion.identity);
         currentHealth -= amount;
 
         if (currentHealth <= 0)
