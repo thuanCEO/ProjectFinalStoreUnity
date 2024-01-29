@@ -9,7 +9,6 @@ public class AttackArea : MonoBehaviour
     private bool isAttacking = false;
     private float attackCooldown = 0.5f;
     private float lastAttackTime;
-
     private void OnTriggerEnter2D(Collider2D collider)
     {
         UnityEngine.Debug.Log("Trigger Entered!");
