@@ -15,7 +15,9 @@ public class Health : MonoBehaviour
     private void Start()
     {
         currentHealth = maxHealth;
-        healthBar.UpdateBar(currentHealth, maxHealth);
+
+        if (healthBar != null)
+            healthBar.UpdateBar(currentHealth, maxHealth);
     }
     private void Update()
     {
@@ -34,12 +36,14 @@ public class Health : MonoBehaviour
         }
 
         currentHealth -= amount;
+
         if (currentHealth <= 0)
         {
             currentHealth = 0;
             Die();
         }
-        healthBar.UpdateBar(currentHealth, maxHealth);
+        if (healthBar != null)
+            healthBar.UpdateBar(currentHealth, maxHealth);
 
     }
 
