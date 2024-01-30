@@ -13574,7 +13574,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   maxHealth: 50
   healthBar: {fileID: 961170969}
-  DamageText: {fileID: 3712653839687369835}
 --- !u!61 &400021810
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -14757,7 +14756,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   maxHealth: 12
   healthBar: {fileID: 0}
-  DamageText: {fileID: 3712653839687369835}
 --- !u!114 &1192228929
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -18177,11 +18175,6 @@ Transform:
   m_Children: []
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!1 &3712653839687369835 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 2934626057761007954, guid: ebf73cac5c1c1744b9055d15bd08e8f1, type: 3}
-  m_PrefabInstance: {fileID: 5287052422916624918}
-  m_PrefabAsset: {fileID: 0}
 --- !u!1001 &5287052422916624918
 PrefabInstance:
   m_ObjectHideFlags: 0
