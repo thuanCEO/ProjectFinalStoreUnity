@@ -1,0 +1,839 @@
+fileFormatVersion: 2
+guid: 86c270c770e568143b4a2d441b3b227c
+ScriptedImporter:
+  internalIDToNameTable: []
+  externalObjects: {}
+  serializedVersion: 2
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+  script: {fileID: 11500000, guid: 62a9f0aa5b59740cfbadc7e5f9823bb0, type: 3}
+  textureImporterSettings:
+    alphaSource: 1
+    mipMapMode: 0
+    enableMipMap: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+    convertToNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+    swizzle: 50462976
+    isReadable: 0
+    streamingMipmaps: 0
+    streamingMipmapsPriority: 0
+    vTOnly: 0
+    ignoreMipmapLimit: 0
+    nPOTScale: 1
+    sRGBTexture: 1
+    spriteMode: 2
+    spriteExtrude: 1
+    spriteMeshType: 1
+    alignment: 0
+    spritePivot: {x: 0.5, y: 0.5}
+    spritePixelsToUnits: 100
+    spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+    spriteGenerateFallbackPhysicsShape: 0
+    generateCubemap: 6
+    cubemapConvolution: 0
+    seamlessCubemap: 0
+    alphaIsTransparency: 1
+    spriteTessellationDetail: -1
+    textureType: 8
+    textureShape: 1
+    singleChannelComponent: 0
+    flipbookRows: 0
+    flipbookColumns: 0
+    ignorePngGamma: 0
+    cookieMode: 0
+    filterMode: 0
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+    normalMap: 0
+    textureFormat: 0
+    maxTextureSize: 0
+    lightmap: 0
+    compressionQuality: 0
+    linearTexture: 0
+    grayScaleToAlpha: 0
+    rGBM: 0
+    cubemapConvolutionSteps: 0
+    cubemapConvolutionExponent: 0
+    maxTextureSizeSet: 0
+    compressionQualitySet: 0
+    textureFormatSet: 0
+    applyGammaDecoding: 0
+  previousAsepriteImporterSettings:
+    fileImportMode: 1
+    importHiddenLayers: 0
+    layerImportMode: 1
+    defaultPivotSpace: 0
+    defaultPivotAlignment: 7
+    customPivotPosition: {x: 0.5, y: 0.5}
+    mosaicPadding: 4
+    spritePadding: 0
+    generateModelPrefab: 1
+    generateAnimationClips: 1
+    addSortingGroup: 1
+    addShadowCasters: 0
+  asepriteImporterSettings:
+    fileImportMode: 1
+    importHiddenLayers: 0
+    layerImportMode: 1
+    defaultPivotSpace: 0
+    defaultPivotAlignment: 7
+    customPivotPosition: {x: 0.5, y: 0.5}
+    mosaicPadding: 4
+    spritePadding: 0
+    generateModelPrefab: 1
+    generateAnimationClips: 1
+    addSortingGroup: 1
+    addShadowCasters: 0
+  importFileNodeState: 1
+  platformSettingsDirtyTick: 0
+  textureAssetName: 
+  singleSpriteImportData:
+  - name: 
+    originalName: 
+    pivot: {x: 0, y: 0}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 0
+      y: 0
+      width: 0
+      height: 0
+    spriteID: 
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 0, y: 0}
+  animatedSpriteImportData:
+  - name: Toad_animations_Frame_0
+    originalName: 
+    pivot: {x: 0.4615385, y: -0.54285717}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 198
+      y: 46
+      width: 26
+      height: 35
+    spriteID: f19c38460b7fe1f4e84a17de4c8b1dba
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 198, y: 46}
+  - name: Toad_animations_Frame_1
+    originalName: 
+    pivot: {x: 0.4615385, y: -0.54285717}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 4
+      y: 91
+      width: 26
+      height: 35
+    spriteID: 12f13133f244600489fb5df6498db51f
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 4, y: 91}
+  - name: Toad_animations_Frame_2
+    originalName: 
+    pivot: {x: 0.4615385, y: -0.5588235}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 50
+      y: 4
+      width: 26
+      height: 34
+    spriteID: f0631c5b3313d2246acbc950985cbbd9
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 50, y: 4}
+  - name: Toad_animations_Frame_3
+    originalName: 
+    pivot: {x: 0.4615385, y: -0.54285717}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 38
+      y: 91
+      width: 26
+      height: 35
+    spriteID: 24bc2055e8165a14c9f3c780d5bf9d22
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 38, y: 91}
+  - name: Toad_animations_Frame_4
+    originalName: 
+    pivot: {x: 0.4615385, y: -0.5588235}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 84
+      y: 4
+      width: 26
+      height: 34
+    spriteID: c584797e812b68245b6898480c9ad209
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 84, y: 4}
+  - name: Toad_animations_Frame_5
+    originalName: 
+    pivot: {x: 0.5, y: -0.54285717}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 72
+      y: 91
+      width: 26
+      height: 35
+    spriteID: 485bc59c4eb6c5b479abe63f8b3e2ef0
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 72, y: 91}
+  - name: Toad_animations_Frame_6
+    originalName: 
+    pivot: {x: 0.5, y: -0.5588235}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 118
+      y: 4
+      width: 26
+      height: 34
+    spriteID: 6b131d0db656d674e8a1e6add19c6144
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 118, y: 4}
+  - name: Toad_animations_Frame_7
+    originalName: 
+    pivot: {x: 0.4615385, y: -0.54285717}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 106
+      y: 91
+      width: 26
+      height: 35
+    spriteID: b9e388b700710d14eb36cbb0961f0e10
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 106, y: 91}
+  - name: Toad_animations_Frame_8
+    originalName: 
+    pivot: {x: 0.5, y: -0.5588235}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 152
+      y: 4
+      width: 26
+      height: 34
+    spriteID: 51b593cde75341f41b51c166077cef74
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 152, y: 4}
+  - name: Toad_animations_Frame_9
+    originalName: 
+    pivot: {x: 0.6451613, y: -0.59375}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 88
+      y: 46
+      width: 31
+      height: 32
+    spriteID: 6579644ced453da4aab02cd6bdd5a1d5
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 88, y: 46}
+  - name: Toad_animations_Frame_10
+    originalName: 
+    pivot: {x: 0.9666667, y: -0.71999997}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 110
+      y: 134
+      width: 30
+      height: 25
+    spriteID: 1069be40ced80964089be136c577f9e5
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 110, y: 134}
+  - name: Toad_animations_Frame_11
+    originalName: 
+    pivot: {x: 0.9666667, y: -0.6923077}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 72
+      y: 134
+      width: 30
+      height: 26
+    spriteID: 7eebd820bde660843adba6f0b70278a0
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 72, y: 134}
+  - name: Toad_animations_Frame_12
+    originalName: 
+    pivot: {x: 0.9666667, y: -0.71999997}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 148
+      y: 134
+      width: 30
+      height: 25
+    spriteID: bdb6a4f3ea0a752418d63fd51cafb9b3
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 148, y: 134}
+  - name: Toad_animations_Frame_13
+    originalName: 
+    pivot: {x: 0.4615385, y: -0.5588235}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 186
+      y: 4
+      width: 26
+      height: 34
+    spriteID: a0c616a3859ae7044b68a9199448a06a
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 186, y: 4}
+  - name: Toad_animations_Frame_14
+    originalName: 
+    pivot: {x: 0.4615385, y: -0.54285717}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 140
+      y: 91
+      width: 26
+      height: 35
+    spriteID: 10f4340e6978a21429afd4f2ff8366c4
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 140, y: 91}
+  - name: Toad_animations_Frame_15
+    originalName: 
+    pivot: {x: 0.48148146, y: -0.5588235}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 163
+      y: 46
+      width: 27
+      height: 34
+    spriteID: 0dae19c50652c60418c4f3929b05e50a
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 163, y: 46}
+  - name: Toad_animations_Frame_16
+    originalName: 
+    pivot: {x: 0.35294122, y: -0.5135135}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 4
+      y: 46
+      width: 34
+      height: 37
+    spriteID: 1d7cf58614ee2c84a860ce4aa0128fa5
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 4, y: 46}
+  - name: Toad_animations_Frame_17
+    originalName: 
+    pivot: {x: 0.3157895, y: -0.5588235}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 4
+      y: 4
+      width: 38
+      height: 34
+    spriteID: f349f223282118949a54bdd00fd04412
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 4, y: 4}
+  - name: Toad_animations_Frame_18
+    originalName: 
+    pivot: {x: 0.35294122, y: -0.54285717}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 46
+      y: 46
+      width: 34
+      height: 35
+    spriteID: cff8a71d5573a39469283963f7c27cdd
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 46, y: 46}
+  - name: Toad_animations_Frame_19
+    originalName: 
+    pivot: {x: 0.42857146, y: -0.5588235}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 127
+      y: 46
+      width: 28
+      height: 34
+    spriteID: 0a1601215fd3a844cb78045971d214a8
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 127, y: 46}
+  - name: Toad_animations_Frame_20
+    originalName: 
+    pivot: {x: 0.4615385, y: -0.54285717}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 174
+      y: 91
+      width: 26
+      height: 35
+    spriteID: d1180e0f7d358da4cb413bbe309b819b
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 174, y: 91}
+  - name: Toad_animations_Frame_21
+    originalName: 
+    pivot: {x: 0.4615385, y: -0.5588235}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 220
+      y: 4
+      width: 26
+      height: 34
+    spriteID: 4f198ce0a3c1c0849bff3a4d12f795b2
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 220, y: 4}
+  - name: Toad_animations_Frame_22
+    originalName: 
+    pivot: {x: 0.4615385, y: -0.54285717}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 208
+      y: 91
+      width: 26
+      height: 35
+    spriteID: c5a66aa8643e5704fae45d0ecee2cd84
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 208, y: 91}
+  - name: Toad_animations_Frame_23
+    originalName: 
+    pivot: {x: 0.4615385, y: -0.5588235}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 38
+      y: 134
+      width: 26
+      height: 34
+    spriteID: e40ca636101fd6249a006aee6e3ebf1f
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 38, y: 134}
+  - name: Toad_animations_Frame_24
+    originalName: 
+    pivot: {x: 0.4615385, y: -0.54285717}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 4
+      y: 134
+      width: 26
+      height: 35
+    spriteID: 17ffa1458d6ceab479225ccacffa6604
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 4, y: 134}
+  spriteSheetImportData: []
+  asepriteLayers:
+  - layerIndex: 0
+    guid: -691765676
+    name: Toad_animations
+    layerFlags: 0
+    layerType: 0
+    blendMode: 0
+    cells:
+    - name: Toad_animations_Frame_0
+      frameIndex: 0
+      cellRect:
+        x: 28
+        y: 19
+        width: 26
+        height: 35
+      spriteId: f19c38460b7fe1f4e84a17de4c8b1dba
+    - name: Toad_animations_Frame_1
+      frameIndex: 1
+      cellRect:
+        x: 28
+        y: 19
+        width: 26
+        height: 35
+      spriteId: 12f13133f244600489fb5df6498db51f
+    - name: Toad_animations_Frame_2
+      frameIndex: 2
+      cellRect:
+        x: 28
+        y: 19
+        width: 26
+        height: 34
+      spriteId: f0631c5b3313d2246acbc950985cbbd9
+    - name: Toad_animations_Frame_3
+      frameIndex: 3
+      cellRect:
+        x: 28
+        y: 19
+        width: 26
+        height: 35
+      spriteId: 24bc2055e8165a14c9f3c780d5bf9d22
+    - name: Toad_animations_Frame_4
+      frameIndex: 4
+      cellRect:
+        x: 28
+        y: 19
+        width: 26
+        height: 34
+      spriteId: c584797e812b68245b6898480c9ad209
+    - name: Toad_animations_Frame_5
+      frameIndex: 5
+      cellRect:
+        x: 27
+        y: 19
+        width: 26
+        height: 35
+      spriteId: 485bc59c4eb6c5b479abe63f8b3e2ef0
+    - name: Toad_animations_Frame_6
+      frameIndex: 6
+      cellRect:
+        x: 27
+        y: 19
+        width: 26
+        height: 34
+      spriteId: 6b131d0db656d674e8a1e6add19c6144
+    - name: Toad_animations_Frame_7
+      frameIndex: 7
+      cellRect:
+        x: 28
+        y: 19
+        width: 26
+        height: 35
+      spriteId: b9e388b700710d14eb36cbb0961f0e10
+    - name: Toad_animations_Frame_8
+      frameIndex: 8
+      cellRect:
+        x: 27
+        y: 19
+        width: 26
+        height: 34
+      spriteId: 51b593cde75341f41b51c166077cef74
+    - name: Toad_animations_Frame_9
+      frameIndex: 9
+      cellRect:
+        x: 20
+        y: 19
+        width: 31
+        height: 32
+      spriteId: 6579644ced453da4aab02cd6bdd5a1d5
+    - name: Toad_animations_Frame_10
+      frameIndex: 10
+      cellRect:
+        x: 11
+        y: 18
+        width: 30
+        height: 25
+      spriteId: 1069be40ced80964089be136c577f9e5
+    - name: Toad_animations_Frame_11
+      frameIndex: 11
+      cellRect:
+        x: 11
+        y: 18
+        width: 30
+        height: 26
+      spriteId: 7eebd820bde660843adba6f0b70278a0
+    - name: Toad_animations_Frame_12
+      frameIndex: 12
+      cellRect:
+        x: 11
+        y: 18
+        width: 30
+        height: 25
+      spriteId: bdb6a4f3ea0a752418d63fd51cafb9b3
+    - name: Toad_animations_Frame_13
+      frameIndex: 13
+      cellRect:
+        x: 28
+        y: 19
+        width: 26
+        height: 34
+      spriteId: a0c616a3859ae7044b68a9199448a06a
+    - name: Toad_animations_Frame_14
+      frameIndex: 14
+      cellRect:
+        x: 28
+        y: 19
+        width: 26
+        height: 35
+      spriteId: 10f4340e6978a21429afd4f2ff8366c4
+    - name: Toad_animations_Frame_15
+      frameIndex: 15
+      cellRect:
+        x: 27
+        y: 19
+        width: 27
+        height: 34
+      spriteId: 0dae19c50652c60418c4f3929b05e50a
+    - name: Toad_animations_Frame_16
+      frameIndex: 16
+      cellRect:
+        x: 28
+        y: 19
+        width: 34
+        height: 37
+      spriteId: 1d7cf58614ee2c84a860ce4aa0128fa5
+    - name: Toad_animations_Frame_17
+      frameIndex: 17
+      cellRect:
+        x: 28
+        y: 19
+        width: 38
+        height: 34
+      spriteId: f349f223282118949a54bdd00fd04412
+    - name: Toad_animations_Frame_18
+      frameIndex: 18
+      cellRect:
+        x: 28
+        y: 19
+        width: 34
+        height: 35
+      spriteId: cff8a71d5573a39469283963f7c27cdd
+    - name: Toad_animations_Frame_19
+      frameIndex: 19
+      cellRect:
+        x: 28
+        y: 19
+        width: 28
+        height: 34
+      spriteId: 0a1601215fd3a844cb78045971d214a8
+    - name: Toad_animations_Frame_20
+      frameIndex: 20
+      cellRect:
+        x: 28
+        y: 19
+        width: 26
+        height: 35
+      spriteId: d1180e0f7d358da4cb413bbe309b819b
+    - name: Toad_animations_Frame_21
+      frameIndex: 21
+      cellRect:
+        x: 28
+        y: 19
+        width: 26
+        height: 34
+      spriteId: 4f198ce0a3c1c0849bff3a4d12f795b2
+    - name: Toad_animations_Frame_22
+      frameIndex: 22
+      cellRect:
+        x: 28
+        y: 19
+        width: 26
+        height: 35
+      spriteId: c5a66aa8643e5704fae45d0ecee2cd84
+    - name: Toad_animations_Frame_23
+      frameIndex: 23
+      cellRect:
+        x: 28
+        y: 19
+        width: 26
+        height: 34
+      spriteId: e40ca636101fd6249a006aee6e3ebf1f
+    - name: Toad_animations_Frame_24
+      frameIndex: 24
+      cellRect:
+        x: 28
+        y: 19
+        width: 26
+        height: 35
+      spriteId: 17ffa1458d6ceab479225ccacffa6604
+    linkedCells: []
+    parentIndex: -1
+  platformSettings: []
+  generatePhysicsShape: 0
+  secondarySpriteTextures: []
+  spritePackingTag: 
+  canvasSize: {x: 80, y: 64}
