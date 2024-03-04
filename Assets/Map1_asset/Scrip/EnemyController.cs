@@ -1,19 +1,23 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class EnemyController : MonoBehaviour
 {
-    Player playerS;
+    GameObject playerGameObject;
+    Health playerHealth;
     public int minDamage;
     public int maxDamage;
-
+    public float damageInterval;
 
     private void OnTriggerEnter2D(Collider2D collision)
     {
-        if (collision.CompareTag("Player")){
-            playerS = collision.GetComponent<Player>();
-            InvokeRepeating("DamagePlayer", 0, 0.1f);
+        if (collision.CompareTag("Player"))
+        {
+            playerGameObject = collision.gameObject;
+            playerHealth = playerGameObject.GetComponent<Health>();
+            InvokeRepeating("DamagePlayer", 0, damageInterval);
         }
     }
 
@@ -21,14 +25,20 @@ public class EnemyController : MonoBehaviour
     {
         if (collision.CompareTag("Player"))
         {
-            playerS = null;
+            playerGameObject = null;
+            playerHealth = null;
             CancelInvoke("DamagePlayer");
         }
     }
     void DamagePlayer()
     {
+        Debug.Log("DamagePlayer called");
         int damageP = UnityEngine.Random.Range(minDamage, maxDamage);
         Debug.Log("Player take Damage" + damageP);
-        //playerS.TakeDamage(damageP);
+        if (playerHealth != null)
+        {
+            playerHealth.TakeDamage(damageP);
+        }
     }
+    
 }

@@ -1,59 +1,61 @@
 using System;
-using System.Collections;
-using System.Collections.Generic;
 using UnityEngine;
-using UnityEngine.UI;
-using TMPro;
 
 public class Health : MonoBehaviour
 {
-    
-    [SerializeField] int maxHealth ;
-    int currentHealth;
+    [SerializeField] int maxHealth;
+    public int CurrentHealth { get; private set; }
     public HealthBar healthBar;
-    //public GameObject DamageText;
+    private Animator animator;
+    private Rigidbody2D rb;
 
+    private LevelManage levelManager;
 
     private void Start()
     {
-        currentHealth = maxHealth;
+        CurrentHealth = maxHealth;
+        animator = GetComponent<Animator>();
+        rb = GetComponent<Rigidbody2D>();
+        levelManager = FindObjectOfType<LevelManage>(); 
 
         if (healthBar != null)
-            healthBar.UpdateBar(currentHealth, maxHealth);
+            healthBar.UpdateBar(CurrentHealth, maxHealth);
     }
+
     private void Update()
     {
         if (Input.GetKeyDown(KeyCode.K))
         {
-            Damage(20);
+            TakeDamage(20);
         }
     }
-    
 
-    public void Damage(int amount)
+    public void TakeDamage(int amount)
     {
         if (amount < 0)
         {
             throw new ArgumentOutOfRangeException("Can not have negative Damage");
         }
-        //Instantiate(DamageText, transform.position, Quaternion.identity);
-        currentHealth -= amount;
+        CurrentHealth -= amount;
 
-        if (currentHealth <= 0)
+        if (CurrentHealth <= 0)
         {
-            currentHealth = 0;
+            CurrentHealth = 0;
             Die();
         }
         if (healthBar != null)
-            healthBar.UpdateBar(currentHealth, maxHealth);
-
+            healthBar.UpdateBar(CurrentHealth, maxHealth);
     }
-
 
     public void Die()
     {
-        
-        UnityEngine.Debug.Log("Die!!!!");
-        Destroy(gameObject);
+        rb.bodyType = RigidbodyType2D.Static;
+        animator.SetTrigger("Death");
+        Debug.Log("Die!!!!");
+
+        if (levelManager != null)
+        {
+            levelManager.ShowDeathPanel();
+        }
     }
 }

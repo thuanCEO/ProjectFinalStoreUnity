@@ -15,7 +15,7 @@ public class AttackArea : MonoBehaviour
 
         if (isAttacking && Time.time - lastAttackTime >= attackCooldown)
         {
-            Health health = collider.GetComponent<Health>();
+            EnemyHealth health = collider.GetComponent<EnemyHealth>();
 
             if (health != null)
             {

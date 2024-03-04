@@ -46,40 +46,58 @@ public class Player : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        if (Input.GetKeyDown(KeyCode.J) && !isAttacking && Time.time - lastAttackTime >= attackDelay)
+        if (!IsDead()) // Check if the player is not dead
         {
-            isAttacking = true;
-            animator.SetBool("IsAttacking", isAttacking);
-            attackArea.EnableAttackArea();
-            lastAttackTime = Time.time;
-        }
-        moveInput.x = Input.GetAxis("Horizontal");
-        moveInput.y = Input.GetAxis("Vertical");
-        transform.position += moveInput * moveSpeed * Time.deltaTime;
-
-
-        if (moveInput.x != 0 || moveInput.y != 0)
-        {
-
-            animator.SetFloat("X", moveInput.x);
-            animator.SetFloat("Y", moveInput.y);
-            if (!isWalking)
+            if (Input.GetKeyDown(KeyCode.J) && !isAttacking && Time.time - lastAttackTime >= attackDelay)
             {
-                isWalking = true;
-                animator.SetBool("IsMoving", isWalking);
+                isAttacking = true;
+                animator.SetBool("IsAttacking", isAttacking);
+                attackArea.EnableAttackArea();
+                lastAttackTime = Time.time;
             }
-            else
+            moveInput.x = Input.GetAxis("Horizontal");
+            moveInput.y = Input.GetAxis("Vertical");
+            transform.position += moveInput * moveSpeed * Time.deltaTime;
+
+
+            if (moveInput.x != 0 || moveInput.y != 0)
             {
-                if (isWalking)
+
+                animator.SetFloat("X", moveInput.x);
+                animator.SetFloat("Y", moveInput.y);
+                if (!isWalking)
                 {
-                    isWalking = false;
+                    isWalking = true;
                     animator.SetBool("IsMoving", isWalking);
-                    StopMoving();
                 }
+                else
+                {
+                    if (isWalking)
+                    {
+                        isWalking = false;
+                        animator.SetBool("IsMoving", isWalking);
+                        StopMoving();
+                    }
+                }
+
             }
-            
+            animator.SetFloat("Speed", moveInput.sqrMagnitude);
         }
-        animator.SetFloat("Speed", moveInput.sqrMagnitude);
+    }
+
+    bool IsDead()
+    {
+        Health healthComponent = GetComponent<Health>();
+        if (healthComponent != null)
+        {
+            return healthComponent.CurrentHealth <= 0;
+        }
+        else
+        {
+            // Handle the case when Health component is not found
+            Debug.LogError("Health component not found on player!");
+            return false;
+        }
     }
     private void StopMoving()
     {
