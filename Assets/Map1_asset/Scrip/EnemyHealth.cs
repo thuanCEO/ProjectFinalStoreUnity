@@ -1,12 +1,15 @@
 using System;
 using System.Collections;
 using System.Collections.Generic;
+using TMPro;
 using UnityEngine;
 
 public class EnemyHealth : MonoBehaviour
 {
     [SerializeField] int maxHealth;
     int currentHealth;
+    public GameObject damageText;
+    public TextMeshPro popupText;
     // Start is called before the first frame update
     void Start()
     {
@@ -24,7 +27,8 @@ public class EnemyHealth : MonoBehaviour
         {
             throw new ArgumentOutOfRangeException("Can not have negative Damage");
         }
-        //Instantiate(DamageText, transform.position, Quaternion.identity);
+        Instantiate(damageText, transform.position, Quaternion.identity);
+        popupText.text = amount.ToString();
         currentHealth -= amount;
 
         if (currentHealth <= 0)
