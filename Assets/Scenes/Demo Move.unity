@@ -14792,7 +14792,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 1, y: 0}
   m_AnchorMax: {x: 1, y: 0}
-  m_AnchoredPosition: {x: -968, y: 449}
+  m_AnchoredPosition: {x: -78, y: 361}
   m_SizeDelta: {x: 0, y: 0}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!222 &961170968
@@ -15287,6 +15287,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   maxHealth: 12
+  damageText: {fileID: 1135709717734381628, guid: 623b4dc0d453b0a4ea492efcfeb34f14, type: 3}
+  popupText: {fileID: 1714518847040603141, guid: 623b4dc0d453b0a4ea492efcfeb34f14, type: 3}
 --- !u!1 &1214065631
 GameObject:
   m_ObjectHideFlags: 0
@@ -18824,7 +18826,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 5263ccce80ea0cf4784ad5bba2e82ea7, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  maxHealth: 50
+  maxHealth: 20
   healthBar: {fileID: 961170969}
 --- !u!114 &1903025980
 MonoBehaviour:
