@@ -9,6 +9,9 @@ EditorBuildSettings:
     path: Assets/Scenes/Demo Move.unity
     guid: 5f5e5824efbf9a946a9b9f52252a40ec
   - enabled: 1
+    path: Assets/Scenes/MainMenu.unity
+    guid: ffebe75dc83d1b64bbaf3b28d9b23285
+  - enabled: 1
     path: Assets/Scenes/Map1.unity
     guid: b4bfc682b8026614a9f9197bac63c195
   - enabled: 1
