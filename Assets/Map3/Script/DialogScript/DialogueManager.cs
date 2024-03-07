@@ -23,6 +23,12 @@ public class DialogueManager : MonoBehaviour
         DisplayMessage();
         backgroundBox.LeanScale(Vector3.one, 0.5f);
     }
+    public void EndDialogue()
+    {
+        Debug.Log("Conversation ended!");
+        backgroundBox.LeanScale(Vector3.zero, 0.5f).setEaseInOutExpo();
+        isActive = false;
+    }
 
     void DisplayMessage()
     {
