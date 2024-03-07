@@ -25,11 +25,14 @@ public class KnockBack : MonoBehaviour
     }
     private IEnumerator KnockCo(Rigidbody2D Enemy)
     {
-        if(Enemy != null)
+        if (Enemy != null) // Ki?m tra xem ??i t??ng có t?n t?i không
         {
             yield return new WaitForSeconds(knockTime);
-            Enemy.velocity = Vector2.zero;
-            Enemy.isKinematic = true;
+            if (Enemy != null) // Ki?m tra l?i sau khi ch?
+            {
+                Enemy.velocity = Vector2.zero;
+                Enemy.isKinematic = true;
+            }
         }
     }
 }
