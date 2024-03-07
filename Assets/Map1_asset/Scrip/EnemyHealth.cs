@@ -11,9 +11,21 @@ public class EnemyHealth : MonoBehaviour
     public GameObject damageText;
     public TextMeshPro popupText;
     // Start is called before the first frame update
+    [SerializeField] EnemyHealBar enemyHealBar;
+    private void Awake()
+    {
+        enemyHealBar = GetComponentInChildren<EnemyHealBar>();
+    }
     void Start()
     {
         currentHealth = maxHealth;
+        if(enemyHealBar != null)
+        {
+
+            enemyHealBar.UpdateEnemyHealthBar(currentHealth, maxHealth);
+        }
+       
+
     }
 
     // Update is called once per frame
@@ -30,6 +42,11 @@ public class EnemyHealth : MonoBehaviour
         Instantiate(damageText, transform.position, Quaternion.identity);
         popupText.text = amount.ToString();
         currentHealth -= amount;
+        if (enemyHealBar != null)
+        {
+
+            enemyHealBar.UpdateEnemyHealthBar(currentHealth, maxHealth);
+        }
 
         if (currentHealth <= 0)
         {

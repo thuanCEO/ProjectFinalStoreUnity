@@ -22,6 +22,7 @@ public class LevelManage : MonoBehaviour
     public void RestartLevel()
     {
         DestroyOldPlayer();
+        Debug.Log("Restart");
         SceneManager.LoadScene(SceneManager.GetActiveScene().name);
     }
 
