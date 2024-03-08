@@ -29,6 +29,7 @@ public class LevelMove : MonoBehaviour
 
             if (player != null)
             {
+                Debug.Log(savedPlayerPosition);
                 player.transform.position = savedPlayerPosition;
                 player.SetActive(true);
             }
