@@ -16,6 +16,8 @@ public class Health : MonoBehaviour
     private int healAmount = 10;
     private float healCooldown = 5;
     private float lastHealTime;
+    private bool isWalking;
+
 
     private void Start()
     {
@@ -74,6 +76,17 @@ public class Health : MonoBehaviour
         {
             levelManager.ShowDeathPanel();
         }
+    }
+    public void Respawn()
+    {
+        SaveHealth.totalHealth = maxHealth;
+        isWalking = false;
+        animator.SetBool("IsMoving", isWalking);
+        animator.ResetTrigger("Death");
+        animator.SetTrigger("Idle");
+        rb.bodyType = RigidbodyType2D.Dynamic;
+        if (healthBar != null)
+            healthBar.UpdateBar(SaveHealth.totalHealth, maxHealth);
     }
     public void Heal(int amount)
     {
