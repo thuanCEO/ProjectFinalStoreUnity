@@ -15,6 +15,7 @@ public class HealthBar : MonoBehaviour
     //    valueText.text = health.ToString() + " / " + maxHealth.ToString();
     //    fillBar.fillAmount = (float)health / (float)maxHealth;
     //}
+
     public void UpdateBar(int currentValue, int maxValue)
     {
         fillBar.fillAmount = (float)currentValue / (float)maxValue;

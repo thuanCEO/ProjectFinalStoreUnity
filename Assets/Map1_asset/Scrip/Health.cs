@@ -11,15 +11,22 @@ public class Health : MonoBehaviour
 
     private LevelManage levelManager;
 
+
     private void Start()
     {
-        CurrentHealth = maxHealth;
+        if(SaveHealth.flag)
+        {
+            SaveHealth.totalHealth = maxHealth;
+            SaveHealth.flag = false;
+        }
+        
         animator = GetComponent<Animator>();
         rb = GetComponent<Rigidbody2D>();
-        levelManager = FindObjectOfType<LevelManage>(); 
+        levelManager = FindObjectOfType<LevelManage>();
+        
 
         if (healthBar != null)
-            healthBar.UpdateBar(CurrentHealth, maxHealth);
+            healthBar.UpdateBar(SaveHealth.totalHealth, maxHealth);
     }
 
     private void Update()
@@ -36,15 +43,15 @@ public class Health : MonoBehaviour
         {
             throw new ArgumentOutOfRangeException("Can not have negative Damage");
         }
-        CurrentHealth -= amount;
+        SaveHealth.totalHealth -= amount;
 
-        if (CurrentHealth <= 0)
+        if (SaveHealth.totalHealth <= 0)
         {
-            CurrentHealth = 0;
+            SaveHealth.totalHealth = 0;
             Die();
         }
         if (healthBar != null)
-            healthBar.UpdateBar(CurrentHealth, maxHealth);
+            healthBar.UpdateBar(SaveHealth.totalHealth, maxHealth);
     }
 
     public void Die()
