@@ -25,21 +25,21 @@ public class Player : MonoBehaviour
         animator = GetComponent<Animator>();
         rb = GetComponent<Rigidbody2D>();
 
-        GameObject playerContainer = new GameObject("PlayerContainer");
+        //GameObject playerContainer = new GameObject("PlayerContainer");
 
-        transform.parent = playerContainer.transform;
+        //transform.parent = playerContainer.transform;
 
-        if (animator == null)
-        {
-            animator = playerContainer.AddComponent<Animator>();
-        }
+        //if (animator == null)
+        //{
+        //    animator = playerContainer.AddComponent<Animator>();
+        //}
 
-        if (rb == null)
-        {
-            rb = playerContainer.AddComponent<Rigidbody2D>();
-        }
+        //if (rb == null)
+        //{
+        //    rb = playerContainer.AddComponent<Rigidbody2D>();
+        //}
 
-        DontDestroyOnLoad(playerContainer);
+        //DontDestroyOnLoad(playerContainer);
         
     }
 
@@ -90,7 +90,7 @@ public class Player : MonoBehaviour
         Health healthComponent = GetComponent<Health>();
         if (healthComponent != null)
         {
-            return healthComponent.CurrentHealth <= 0;
+            return SaveHealth.totalHealth <= 0;
         }
         else
         {
