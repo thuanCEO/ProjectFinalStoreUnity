@@ -11,6 +11,11 @@ public class Health : MonoBehaviour
 
     private LevelManage levelManager;
 
+    private bool canHeal = true; 
+    private bool isHealing = false; 
+    private int healAmount = 10;
+    private float healCooldown = 5;
+    private float lastHealTime;
 
     private void Start()
     {
@@ -27,13 +32,18 @@ public class Health : MonoBehaviour
 
         if (healthBar != null)
             healthBar.UpdateBar(SaveHealth.totalHealth, maxHealth);
+     lastHealTime = Time.time;
     }
 
     private void Update()
     {
-        if (Input.GetKeyDown(KeyCode.K))
+         if (Input.GetKeyDown(KeyCode.L) && canHeal)
         {
-            TakeDamage(20);
+            if (Time.time - lastHealTime >= healCooldown) 
+            {
+                Heal(10);
+                lastHealTime = Time.time; 
+            }
         }
     }
 
@@ -65,4 +75,19 @@ public class Health : MonoBehaviour
             levelManager.ShowDeathPanel();
         }
     }
+    public void Heal(int amount)
+    {
+        if (amount < 0)
+        {
+            throw new ArgumentOutOfRangeException("Can not heal by a negative amount");
+        }
+        SaveHealth.totalHealth += amount;
+        if (SaveHealth.totalHealth > maxHealth)
+        {
+            SaveHealth.totalHealth = maxHealth;
+        }
+        if (healthBar != null)
+            healthBar.UpdateBar(SaveHealth.totalHealth, maxHealth);
+    }
+    
 }
