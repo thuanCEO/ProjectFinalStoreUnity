@@ -54,7 +54,15 @@ public class Health : MonoBehaviour
             }
         }
     }
-
+    public void IncreaseHealUses()
+    {
+        if (healUsesLeft < maxHealUses)
+        {
+            healUsesLeft++;
+            Debug.Log(healUsesLeft);
+            UpdateHealUsesLeftUI();
+        }
+    }
     public void TakeDamage(int amount)
     {
         if (amount < 0)
