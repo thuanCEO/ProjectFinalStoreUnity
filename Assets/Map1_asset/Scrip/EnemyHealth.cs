@@ -3,6 +3,7 @@ using System.Collections;
 using System.Collections.Generic;
 using TMPro;
 using UnityEngine;
+using UnityEngine.Events;
 
 public class EnemyHealth : MonoBehaviour
 {
@@ -10,6 +11,7 @@ public class EnemyHealth : MonoBehaviour
     int currentHealth;
     public GameObject damageText;
     public TextMeshPro popupText;
+    public UnityEvent OnDeath;
     // Start is called before the first frame update
     [SerializeField] EnemyHealBar enemyHealBar;
     private void Awake()
@@ -56,8 +58,8 @@ public class EnemyHealth : MonoBehaviour
     }
     public void Die()
     {
-
-        UnityEngine.Debug.Log("Die!!!!");
+        Debug.Log("Enemy died!");
+        OnDeath.Invoke();
         Destroy(gameObject);
     }
 }
