@@ -13,8 +13,6 @@ public class Health : MonoBehaviour
     private LevelManage levelManager;
 
     private bool canHeal = true; 
-    private bool isHealing = false; 
-    private int healAmount = 10;
     private float healCooldown = 5;
     private float lastHealTime;
     private bool isWalking;
