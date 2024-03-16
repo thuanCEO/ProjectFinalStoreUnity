@@ -15,6 +15,7 @@ public class Player : MonoBehaviour
     private AttackArea attackArea;
     private float attackDelay = 0.5f;
     private float lastAttackTime;
+    private int itemCount = 0;
 
     // Start is called before the first frame update
     void Start()
@@ -110,5 +111,13 @@ public class Player : MonoBehaviour
         animator.SetTrigger("AttackFinished");
         attackArea.DisableAttackArea();
 
+    }
+    void OnTriggerEnter2D(Collider2D other)
+    {
+        if (other.CompareTag("Item"))
+        {
+            Debug.Log("Player collected the item!");
+            Destroy(other.gameObject);
+        }
     }
 }

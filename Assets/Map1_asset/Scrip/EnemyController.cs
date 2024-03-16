@@ -10,6 +10,7 @@ public class EnemyController : MonoBehaviour
     public int minDamage;
     public int maxDamage;
     public float damageInterval;
+    public GameObject itemDropPrefab;
 
     private void OnTriggerEnter2D(Collider2D collision)
     {
@@ -40,5 +41,19 @@ public class EnemyController : MonoBehaviour
             playerHealth.TakeDamage(damageP);
         }
     }
-    
-}
+    void OnDestroy()
+    {
+        DropItem();
+    }
+
+    void DropItem()
+    {
+        if (itemDropPrefab != null)
+        {
+            
+            GameObject tempItem = Instantiate(itemDropPrefab, transform.position, Quaternion.identity);
+            
+            Destroy(tempItem, 5f); 
+        }
+    }
+    }
