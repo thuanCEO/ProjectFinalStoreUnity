@@ -6,6 +6,7 @@ using UnityEngine;
 public class AttackArea : MonoBehaviour
 {
     private int damage = 3;
+    
     private bool isAttacking = false;
     private float attackCooldown = 0.5f;
     private float lastAttackTime;

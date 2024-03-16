@@ -22365,7 +22365,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: da43bfe71d5695847bc970581afb7d3d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  maxHealth: 5
+  maxHealth: 50
   damageText: {fileID: 3942290882881464937, guid: 623b4dc0d453b0a4ea492efcfeb34f14, type: 3}
   popupText: {fileID: 2537049689612890050, guid: 623b4dc0d453b0a4ea492efcfeb34f14, type: 3}
   enemyHealBar: {fileID: 410604210}
@@ -24372,11 +24372,11 @@ MonoBehaviour:
   m_GameObject: {fileID: 1168660600}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: f1e99f0337858d441b268658bf689a48, type: 3}
+  m_Script: {fileID: 11500000, guid: 03f320e3a2d3e9f4ba5b086dd20a1334, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   imageCooldown: {fileID: 1133812397}
-  cooldown: 15
+  cooldown: 10
 --- !u!1 &1175610001
 GameObject:
   m_ObjectHideFlags: 0
@@ -26320,7 +26320,7 @@ GameObject:
   - component: {fileID: 1567023082}
   - component: {fileID: 1567023081}
   m_Layer: 5
-  m_Name: Skill 3
+  m_Name: Skill 4
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0

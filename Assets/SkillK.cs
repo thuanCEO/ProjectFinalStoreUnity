@@ -15,11 +15,7 @@ public class Skill : MonoBehaviour
             isCooldown = true;
             imageCooldown.fillAmount = 1; 
      }
-        if (Input.GetKeyDown(KeyCode.L) && !isCooldown)
-        {
-            isCooldown = true;
-             imageCooldown.fillAmount = 1; 
-         }
+        
         
          if (isCooldown)
          {
