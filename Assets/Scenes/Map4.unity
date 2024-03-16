@@ -539,6 +539,9 @@ MonoBehaviour:
   maxHealth: 20
   damageText: {fileID: 3942290882881464937, guid: b4c9f1aa63c4043408d28af87fd4e41f, type: 3}
   popupText: {fileID: 2537049689612890050, guid: b4c9f1aa63c4043408d28af87fd4e41f, type: 3}
+  OnDeath:
+    m_PersistentCalls:
+      m_Calls: []
   enemyHealBar: {fileID: 1484532062}
 --- !u!114 &107782656
 MonoBehaviour:
@@ -1361,6 +1364,9 @@ MonoBehaviour:
   maxHealth: 50
   damageText: {fileID: 3942290882881464937, guid: 132818facac6d234690befec853887d7, type: 3}
   popupText: {fileID: 2537049689612890050, guid: 132818facac6d234690befec853887d7, type: 3}
+  OnDeath:
+    m_PersistentCalls:
+      m_Calls: []
   enemyHealBar: {fileID: 98912628}
 --- !u!114 &305755772
 MonoBehaviour:
@@ -1619,6 +1625,9 @@ MonoBehaviour:
   maxHealth: 50
   damageText: {fileID: 3942290882881464937, guid: 132818facac6d234690befec853887d7, type: 3}
   popupText: {fileID: 2537049689612890050, guid: 132818facac6d234690befec853887d7, type: 3}
+  OnDeath:
+    m_PersistentCalls:
+      m_Calls: []
   enemyHealBar: {fileID: 1200491569}
 --- !u!114 &350678977
 MonoBehaviour:
@@ -2421,6 +2430,9 @@ MonoBehaviour:
   maxHealth: 50
   damageText: {fileID: 3942290882881464937, guid: 132818facac6d234690befec853887d7, type: 3}
   popupText: {fileID: 2537049689612890050, guid: 132818facac6d234690befec853887d7, type: 3}
+  OnDeath:
+    m_PersistentCalls:
+      m_Calls: []
   enemyHealBar: {fileID: 622434438}
 --- !u!114 &412868473
 MonoBehaviour:
@@ -2790,6 +2802,9 @@ MonoBehaviour:
   maxHealth: 50
   damageText: {fileID: 3942290882881464937, guid: 132818facac6d234690befec853887d7, type: 3}
   popupText: {fileID: 2537049689612890050, guid: 132818facac6d234690befec853887d7, type: 3}
+  OnDeath:
+    m_PersistentCalls:
+      m_Calls: []
   enemyHealBar: {fileID: 1784382288}
 --- !u!114 &429453888
 MonoBehaviour:
@@ -3280,6 +3295,9 @@ MonoBehaviour:
   maxHealth: 50
   damageText: {fileID: 3942290882881464937, guid: 132818facac6d234690befec853887d7, type: 3}
   popupText: {fileID: 2537049689612890050, guid: 132818facac6d234690befec853887d7, type: 3}
+  OnDeath:
+    m_PersistentCalls:
+      m_Calls: []
   enemyHealBar: {fileID: 1636449753}
 --- !u!114 &466886954
 MonoBehaviour:
@@ -3860,7 +3878,7 @@ Transform:
   m_GameObject: {fileID: 489255753}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -22.14, y: 1.33, z: 0}
+  m_LocalPosition: {x: -21.65, y: 1.75, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -6357,6 +6375,9 @@ MonoBehaviour:
   maxHealth: 20
   damageText: {fileID: 3942290882881464937, guid: b4c9f1aa63c4043408d28af87fd4e41f, type: 3}
   popupText: {fileID: 2537049689612890050, guid: b4c9f1aa63c4043408d28af87fd4e41f, type: 3}
+  OnDeath:
+    m_PersistentCalls:
+      m_Calls: []
   enemyHealBar: {fileID: 829248632}
 --- !u!114 &605210557
 MonoBehaviour:
@@ -15977,6 +15998,9 @@ MonoBehaviour:
   maxHealth: 50
   damageText: {fileID: 3942290882881464937, guid: 132818facac6d234690befec853887d7, type: 3}
   popupText: {fileID: 2537049689612890050, guid: 132818facac6d234690befec853887d7, type: 3}
+  OnDeath:
+    m_PersistentCalls:
+      m_Calls: []
   enemyHealBar: {fileID: 1853383652}
 --- !u!114 &656801391
 MonoBehaviour:
@@ -19461,6 +19485,9 @@ MonoBehaviour:
   maxHealth: 50
   damageText: {fileID: 3942290882881464937, guid: 132818facac6d234690befec853887d7, type: 3}
   popupText: {fileID: 2537049689612890050, guid: 132818facac6d234690befec853887d7, type: 3}
+  OnDeath:
+    m_PersistentCalls:
+      m_Calls: []
   enemyHealBar: {fileID: 1709557676}
 --- !u!114 &1103407141
 MonoBehaviour:
@@ -20036,6 +20063,9 @@ MonoBehaviour:
   maxHealth: 20
   damageText: {fileID: 3942290882881464937, guid: b4c9f1aa63c4043408d28af87fd4e41f, type: 3}
   popupText: {fileID: 2537049689612890050, guid: b4c9f1aa63c4043408d28af87fd4e41f, type: 3}
+  OnDeath:
+    m_PersistentCalls:
+      m_Calls: []
   enemyHealBar: {fileID: 199902007}
 --- !u!114 &1159354033
 MonoBehaviour:
@@ -21034,6 +21064,9 @@ MonoBehaviour:
   maxHealth: 50
   damageText: {fileID: 3942290882881464937, guid: 132818facac6d234690befec853887d7, type: 3}
   popupText: {fileID: 2537049689612890050, guid: 132818facac6d234690befec853887d7, type: 3}
+  OnDeath:
+    m_PersistentCalls:
+      m_Calls: []
   enemyHealBar: {fileID: 1455220357}
 --- !u!114 &1306073967
 MonoBehaviour:
@@ -22414,6 +22447,9 @@ MonoBehaviour:
   maxHealth: 20
   damageText: {fileID: 3942290882881464937, guid: b4c9f1aa63c4043408d28af87fd4e41f, type: 3}
   popupText: {fileID: 2537049689612890050, guid: b4c9f1aa63c4043408d28af87fd4e41f, type: 3}
+  OnDeath:
+    m_PersistentCalls:
+      m_Calls: []
   enemyHealBar: {fileID: 687790111}
 --- !u!114 &1515273920
 MonoBehaviour:
@@ -22928,6 +22964,9 @@ MonoBehaviour:
   maxHealth: 20
   damageText: {fileID: 3942290882881464937, guid: b4c9f1aa63c4043408d28af87fd4e41f, type: 3}
   popupText: {fileID: 2537049689612890050, guid: b4c9f1aa63c4043408d28af87fd4e41f, type: 3}
+  OnDeath:
+    m_PersistentCalls:
+      m_Calls: []
   enemyHealBar: {fileID: 1418931899}
 --- !u!114 &1565962240
 MonoBehaviour:
@@ -24032,6 +24071,9 @@ MonoBehaviour:
   maxHealth: 20
   damageText: {fileID: 3942290882881464937, guid: b4c9f1aa63c4043408d28af87fd4e41f, type: 3}
   popupText: {fileID: 2537049689612890050, guid: b4c9f1aa63c4043408d28af87fd4e41f, type: 3}
+  OnDeath:
+    m_PersistentCalls:
+      m_Calls: []
   enemyHealBar: {fileID: 1215901736}
 --- !u!114 &1701057501
 MonoBehaviour:
@@ -24290,6 +24332,9 @@ MonoBehaviour:
   maxHealth: 50
   damageText: {fileID: 3942290882881464937, guid: 132818facac6d234690befec853887d7, type: 3}
   popupText: {fileID: 2537049689612890050, guid: 132818facac6d234690befec853887d7, type: 3}
+  OnDeath:
+    m_PersistentCalls:
+      m_Calls: []
   enemyHealBar: {fileID: 1846408572}
 --- !u!114 &1705820478
 MonoBehaviour:
@@ -58232,6 +58277,9 @@ MonoBehaviour:
   maxHealth: 10
   damageText: {fileID: 3942290882881464937, guid: 132818facac6d234690befec853887d7, type: 3}
   popupText: {fileID: 2537049689612890050, guid: 132818facac6d234690befec853887d7, type: 3}
+  OnDeath:
+    m_PersistentCalls:
+      m_Calls: []
   enemyHealBar: {fileID: 972764748}
 --- !u!114 &1969749499
 MonoBehaviour:
@@ -86188,6 +86236,9 @@ MonoBehaviour:
   maxHealth: 20
   damageText: {fileID: 3942290882881464937, guid: b4c9f1aa63c4043408d28af87fd4e41f, type: 3}
   popupText: {fileID: 2537049689612890050, guid: b4c9f1aa63c4043408d28af87fd4e41f, type: 3}
+  OnDeath:
+    m_PersistentCalls:
+      m_Calls: []
   enemyHealBar: {fileID: 409114449}
 --- !u!114 &2093229512
 MonoBehaviour:
