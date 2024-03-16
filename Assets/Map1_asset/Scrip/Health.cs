@@ -17,7 +17,8 @@ public class Health : MonoBehaviour
     private float healCooldown = 5;
     private float lastHealTime;
     private bool isWalking;
-
+    private int maxHealUses = 3; 
+    private int healUsesLeft;
 
     private void Start()
     {
@@ -34,17 +35,19 @@ public class Health : MonoBehaviour
 
         if (healthBar != null)
             healthBar.UpdateBar(SaveHealth.totalHealth, maxHealth);
-     lastHealTime = Time.time;
+        lastHealTime = Time.time;
+        healUsesLeft = maxHealUses;
     }
 
     private void Update()
     {
-         if (Input.GetKeyDown(KeyCode.L) && canHeal)
+        if (!IsDead() && Input.GetKeyDown(KeyCode.L) && canHeal && healUsesLeft > 0)
         {
-            if (Time.time - lastHealTime >= healCooldown) 
+            if (Time.time - lastHealTime >= healCooldown)
             {
                 Heal(10);
-                lastHealTime = Time.time; 
+                lastHealTime = Time.time;
+                healUsesLeft--;
             }
         }
     }
@@ -102,5 +105,8 @@ public class Health : MonoBehaviour
         if (healthBar != null)
             healthBar.UpdateBar(SaveHealth.totalHealth, maxHealth);
     }
-    
+    bool IsDead()
+    {
+        return SaveHealth.totalHealth <= 0;
+    }
 }
