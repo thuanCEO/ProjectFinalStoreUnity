@@ -1,4 +1,5 @@
 using System;
+using TMPro;
 using UnityEngine;
 
 public class Health : MonoBehaviour
@@ -20,6 +21,8 @@ public class Health : MonoBehaviour
     private int maxHealUses = 3; 
     private int healUsesLeft;
 
+    public TMP_Text HealUseLeft;
+
     private void Start()
     {
         if(SaveHealth.flag)
@@ -37,6 +40,7 @@ public class Health : MonoBehaviour
             healthBar.UpdateBar(SaveHealth.totalHealth, maxHealth);
         lastHealTime = Time.time;
         healUsesLeft = maxHealUses;
+        UpdateHealUsesLeftUI();
     }
 
     private void Update()
@@ -48,6 +52,7 @@ public class Health : MonoBehaviour
                 Heal(10);
                 lastHealTime = Time.time;
                 healUsesLeft--;
+                UpdateHealUsesLeftUI();
             }
         }
     }
@@ -108,5 +113,12 @@ public class Health : MonoBehaviour
     bool IsDead()
     {
         return SaveHealth.totalHealth <= 0;
+    }
+    private void UpdateHealUsesLeftUI()
+    {
+        if (HealUseLeft != null)
+        {
+            HealUseLeft.text =  healUsesLeft.ToString();
+        }
     }
 }
