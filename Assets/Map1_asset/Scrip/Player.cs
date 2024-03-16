@@ -117,7 +117,12 @@ public class Player : MonoBehaviour
         if (other.CompareTag("Item"))
         {
             Debug.Log("Player collected the item!");
-            Destroy(other.gameObject);
+            Health healthComponent = GetComponent<Health>();
+            if (healthComponent != null)
+            {
+                healthComponent.IncreaseHealUses();
+            }
+            Destroy(other.gameObject);           
         }
     }
 }

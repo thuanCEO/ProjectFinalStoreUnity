@@ -241,6 +241,9 @@ MonoBehaviour:
   maxHealth: 20
   damageText: {fileID: 3942290882881464937, guid: 132818facac6d234690befec853887d7, type: 3}
   popupText: {fileID: 2537049689612890050, guid: 132818facac6d234690befec853887d7, type: 3}
+  OnDeath:
+    m_PersistentCalls:
+      m_Calls: []
   enemyHealBar: {fileID: 2123544626}
 --- !u!114 &8909326
 MonoBehaviour:
@@ -912,6 +915,9 @@ MonoBehaviour:
   maxHealth: 20
   damageText: {fileID: 3942290882881464937, guid: b4c9f1aa63c4043408d28af87fd4e41f, type: 3}
   popupText: {fileID: 2537049689612890050, guid: b4c9f1aa63c4043408d28af87fd4e41f, type: 3}
+  OnDeath:
+    m_PersistentCalls:
+      m_Calls: []
   enemyHealBar: {fileID: 1630490713}
 --- !u!114 &33110589
 MonoBehaviour:
@@ -3183,6 +3189,9 @@ MonoBehaviour:
   maxHealth: 20
   damageText: {fileID: 3942290882881464937, guid: b4c9f1aa63c4043408d28af87fd4e41f, type: 3}
   popupText: {fileID: 2537049689612890050, guid: b4c9f1aa63c4043408d28af87fd4e41f, type: 3}
+  OnDeath:
+    m_PersistentCalls:
+      m_Calls: []
   enemyHealBar: {fileID: 576538222}
 --- !u!114 &262483593
 MonoBehaviour:
@@ -3634,6 +3643,9 @@ MonoBehaviour:
   maxHealth: 20
   damageText: {fileID: 3942290882881464937, guid: 623b4dc0d453b0a4ea492efcfeb34f14, type: 3}
   popupText: {fileID: 2537049689612890050, guid: 623b4dc0d453b0a4ea492efcfeb34f14, type: 3}
+  OnDeath:
+    m_PersistentCalls:
+      m_Calls: []
   enemyHealBar: {fileID: 1877669700}
 --- !u!114 &267774691
 MonoBehaviour:
@@ -3900,6 +3912,9 @@ MonoBehaviour:
   maxHealth: 20
   damageText: {fileID: 3942290882881464937, guid: 132818facac6d234690befec853887d7, type: 3}
   popupText: {fileID: 2537049689612890050, guid: 132818facac6d234690befec853887d7, type: 3}
+  OnDeath:
+    m_PersistentCalls:
+      m_Calls: []
   enemyHealBar: {fileID: 533307491}
 --- !u!114 &292197605
 MonoBehaviour:
@@ -5050,6 +5065,9 @@ MonoBehaviour:
   maxHealth: 16
   damageText: {fileID: 3942290882881464937, guid: b4c9f1aa63c4043408d28af87fd4e41f, type: 3}
   popupText: {fileID: 2537049689612890050, guid: b4c9f1aa63c4043408d28af87fd4e41f, type: 3}
+  OnDeath:
+    m_PersistentCalls:
+      m_Calls: []
   enemyHealBar: {fileID: 1027977606}
 --- !u!114 &355919737
 MonoBehaviour:
@@ -5179,6 +5197,9 @@ MonoBehaviour:
   maxHealth: 6
   damageText: {fileID: 3942290882881464937, guid: b4c9f1aa63c4043408d28af87fd4e41f, type: 3}
   popupText: {fileID: 2537049689612890050, guid: b4c9f1aa63c4043408d28af87fd4e41f, type: 3}
+  OnDeath:
+    m_PersistentCalls:
+      m_Calls: []
   enemyHealBar: {fileID: 793172229}
 --- !u!114 &360014470
 MonoBehaviour:
@@ -5398,6 +5419,63 @@ Transform:
   - {fileID: 1905254565}
   m_Father: {fileID: 1208245075}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1001 &361262029
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    serializedVersion: 3
+    m_TransformParent: {fileID: 0}
+    m_Modifications:
+    - target: {fileID: 5099162789409323701, guid: af5114e7ef4e76346bd7f39fb340b3d9, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 6.4
+      objectReference: {fileID: 0}
+    - target: {fileID: 5099162789409323701, guid: af5114e7ef4e76346bd7f39fb340b3d9, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: -18.46
+      objectReference: {fileID: 0}
+    - target: {fileID: 5099162789409323701, guid: af5114e7ef4e76346bd7f39fb340b3d9, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5099162789409323701, guid: af5114e7ef4e76346bd7f39fb340b3d9, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 5099162789409323701, guid: af5114e7ef4e76346bd7f39fb340b3d9, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5099162789409323701, guid: af5114e7ef4e76346bd7f39fb340b3d9, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5099162789409323701, guid: af5114e7ef4e76346bd7f39fb340b3d9, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5099162789409323701, guid: af5114e7ef4e76346bd7f39fb340b3d9, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5099162789409323701, guid: af5114e7ef4e76346bd7f39fb340b3d9, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5099162789409323701, guid: af5114e7ef4e76346bd7f39fb340b3d9, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7587282813691900094, guid: af5114e7ef4e76346bd7f39fb340b3d9, type: 3}
+      propertyPath: m_Name
+      value: Item HP
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: af5114e7ef4e76346bd7f39fb340b3d9, type: 3}
 --- !u!1 &363966732
 GameObject:
   m_ObjectHideFlags: 0
@@ -5566,6 +5644,9 @@ MonoBehaviour:
   maxHealth: 20
   damageText: {fileID: 3942290882881464937, guid: 132818facac6d234690befec853887d7, type: 3}
   popupText: {fileID: 2537049689612890050, guid: 132818facac6d234690befec853887d7, type: 3}
+  OnDeath:
+    m_PersistentCalls:
+      m_Calls: []
   enemyHealBar: {fileID: 129674897}
 --- !u!114 &374717325
 MonoBehaviour:
@@ -6658,6 +6739,9 @@ MonoBehaviour:
   maxHealth: 6
   damageText: {fileID: 3942290882881464937, guid: b4c9f1aa63c4043408d28af87fd4e41f, type: 3}
   popupText: {fileID: 2537049689612890050, guid: b4c9f1aa63c4043408d28af87fd4e41f, type: 3}
+  OnDeath:
+    m_PersistentCalls:
+      m_Calls: []
   enemyHealBar: {fileID: 559503930}
 --- !u!114 &492989601
 MonoBehaviour:
@@ -20875,6 +20959,9 @@ MonoBehaviour:
   maxHealth: 20
   damageText: {fileID: 3942290882881464937, guid: b4c9f1aa63c4043408d28af87fd4e41f, type: 3}
   popupText: {fileID: 2537049689612890050, guid: b4c9f1aa63c4043408d28af87fd4e41f, type: 3}
+  OnDeath:
+    m_PersistentCalls:
+      m_Calls: []
   enemyHealBar: {fileID: 127410566}
 --- !u!114 &775632763
 MonoBehaviour:
@@ -21638,6 +21725,9 @@ MonoBehaviour:
   maxHealth: 20
   damageText: {fileID: 3942290882881464937, guid: b4c9f1aa63c4043408d28af87fd4e41f, type: 3}
   popupText: {fileID: 2537049689612890050, guid: b4c9f1aa63c4043408d28af87fd4e41f, type: 3}
+  OnDeath:
+    m_PersistentCalls:
+      m_Calls: []
   enemyHealBar: {fileID: 1674440510}
 --- !u!114 &826772546
 MonoBehaviour:
@@ -21944,6 +22034,9 @@ MonoBehaviour:
   maxHealth: 6
   damageText: {fileID: 3942290882881464937, guid: b4c9f1aa63c4043408d28af87fd4e41f, type: 3}
   popupText: {fileID: 2537049689612890050, guid: b4c9f1aa63c4043408d28af87fd4e41f, type: 3}
+  OnDeath:
+    m_PersistentCalls:
+      m_Calls: []
   enemyHealBar: {fileID: 1028249226}
 --- !u!114 &855787106
 MonoBehaviour:
@@ -22315,6 +22408,9 @@ MonoBehaviour:
   maxHealth: 16
   damageText: {fileID: 3942290882881464937, guid: b4c9f1aa63c4043408d28af87fd4e41f, type: 3}
   popupText: {fileID: 2537049689612890050, guid: b4c9f1aa63c4043408d28af87fd4e41f, type: 3}
+  OnDeath:
+    m_PersistentCalls:
+      m_Calls: []
   enemyHealBar: {fileID: 799688000}
 --- !u!114 &887551389
 MonoBehaviour:
@@ -22854,6 +22950,9 @@ MonoBehaviour:
   maxHealth: 5
   damageText: {fileID: 3942290882881464937, guid: 623b4dc0d453b0a4ea492efcfeb34f14, type: 3}
   popupText: {fileID: 2537049689612890050, guid: 623b4dc0d453b0a4ea492efcfeb34f14, type: 3}
+  OnDeath:
+    m_PersistentCalls:
+      m_Calls: []
   enemyHealBar: {fileID: 410604210}
 --- !u!61 &929821564
 BoxCollider2D:
@@ -24580,6 +24679,9 @@ MonoBehaviour:
   maxHealth: 20
   damageText: {fileID: 3942290882881464937, guid: b4c9f1aa63c4043408d28af87fd4e41f, type: 3}
   popupText: {fileID: 2537049689612890050, guid: b4c9f1aa63c4043408d28af87fd4e41f, type: 3}
+  OnDeath:
+    m_PersistentCalls:
+      m_Calls: []
   enemyHealBar: {fileID: 201709650}
 --- !u!114 &1163694084
 MonoBehaviour:
@@ -25574,6 +25676,9 @@ MonoBehaviour:
   maxHealth: 10
   damageText: {fileID: 3942290882881464937, guid: b4c9f1aa63c4043408d28af87fd4e41f, type: 3}
   popupText: {fileID: 2537049689612890050, guid: b4c9f1aa63c4043408d28af87fd4e41f, type: 3}
+  OnDeath:
+    m_PersistentCalls:
+      m_Calls: []
   enemyHealBar: {fileID: 2112015885}
 --- !u!114 &1272143449
 MonoBehaviour:
@@ -26316,6 +26421,9 @@ MonoBehaviour:
   maxHealth: 16
   damageText: {fileID: 3942290882881464937, guid: b4c9f1aa63c4043408d28af87fd4e41f, type: 3}
   popupText: {fileID: 2537049689612890050, guid: b4c9f1aa63c4043408d28af87fd4e41f, type: 3}
+  OnDeath:
+    m_PersistentCalls:
+      m_Calls: []
   enemyHealBar: {fileID: 623317786}
 --- !u!114 &1458203625
 MonoBehaviour:
@@ -51016,6 +51124,9 @@ MonoBehaviour:
   maxHealth: 10
   damageText: {fileID: 3942290882881464937, guid: b4c9f1aa63c4043408d28af87fd4e41f, type: 3}
   popupText: {fileID: 2537049689612890050, guid: b4c9f1aa63c4043408d28af87fd4e41f, type: 3}
+  OnDeath:
+    m_PersistentCalls:
+      m_Calls: []
   enemyHealBar: {fileID: 718492775}
 --- !u!114 &1994421547
 MonoBehaviour:
@@ -51605,3 +51716,4 @@ SceneRoots:
   - {fileID: 1208245075}
   - {fileID: 1040403763}
   - {fileID: 2136535475}
+  - {fileID: 361262029}
