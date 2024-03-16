@@ -24,7 +24,15 @@ public class AttackArea : MonoBehaviour
             }
         }
     }
+    public int GetDamage()
+    {
+        return damage;
+    }
 
+    public void SetDamage(int newDamage)
+    {
+        damage = newDamage;
+    }
     public void EnableAttackArea()
     {
         isAttacking = true;

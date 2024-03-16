@@ -21,7 +21,7 @@ public class Player : MonoBehaviour
     void Start()
     {
         attackArea = transform.GetChild(0).GetComponent<AttackArea>();
-        attackArea.DisableAttackArea();
+        //attackArea.DisableAttackArea();
 
         animator = GetComponent<Animator>();
         rb = GetComponent<Rigidbody2D>();
@@ -109,7 +109,7 @@ public class Player : MonoBehaviour
         isAttacking = false;
         animator.SetBool("IsAttacking", isAttacking);
         animator.SetTrigger("AttackFinished");
-        attackArea.DisableAttackArea();
+        //attackArea.DisableAttackArea();
 
     }
     void OnTriggerEnter2D(Collider2D other)
