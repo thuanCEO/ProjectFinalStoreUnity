@@ -1805,7 +1805,7 @@ GameObject:
   - component: {fileID: 233327016}
   m_Layer: 0
   m_Name: Idle_0 (1)
-  m_TagString: Untagged
+  m_TagString: Enemy
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -9260,7 +9260,7 @@ GameObject:
   - component: {fileID: 602085409}
   m_Layer: 0
   m_Name: Flight_0
-  m_TagString: Untagged
+  m_TagString: Enemy
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -59702,7 +59702,7 @@ GameObject:
   - component: {fileID: 1021520879}
   m_Layer: 0
   m_Name: Flight_0
-  m_TagString: Untagged
+  m_TagString: Enemy
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -64152,7 +64152,7 @@ GameObject:
   - component: {fileID: 1047813066}
   m_Layer: 0
   m_Name: Idle_0 (2)
-  m_TagString: Untagged
+  m_TagString: Enemy
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -69412,7 +69412,7 @@ GameObject:
   - component: {fileID: 1654242420}
   m_Layer: 0
   m_Name: Flight_0 (1)
-  m_TagString: Untagged
+  m_TagString: Enemy
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -70949,7 +70949,7 @@ GameObject:
   - component: {fileID: 1911151421}
   m_Layer: 0
   m_Name: Idle_0
-  m_TagString: Untagged
+  m_TagString: Enemy
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -71281,7 +71281,7 @@ GameObject:
   - component: {fileID: 1919267685}
   m_Layer: 0
   m_Name: Idle_0
-  m_TagString: Untagged
+  m_TagString: Enemy
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
