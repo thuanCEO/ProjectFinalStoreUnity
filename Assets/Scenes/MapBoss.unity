@@ -258,9 +258,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   minDamage: 2
-  maxDamage: 5
+  maxDamage: 3
   damageInterval: 5
-  itemDropPrefab: {fileID: 0}
+  itemDropPrefab: {fileID: 361262030}
 --- !u!58 &8909327
 CircleCollider2D:
   m_ObjectHideFlags: 0
@@ -950,7 +950,7 @@ MonoBehaviour:
   minDamage: 1
   maxDamage: 5
   damageInterval: 2
-  itemDropPrefab: {fileID: 0}
+  itemDropPrefab: {fileID: 361262030}
 --- !u!58 &33110591
 CircleCollider2D:
   m_ObjectHideFlags: 0
@@ -3170,10 +3170,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: a93406cb25ad1904b9b9185e71e590f7, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  minDamage: 5
-  maxDamage: 15
+  minDamage: 2
+  maxDamage: 3
   damageInterval: 3
-  itemDropPrefab: {fileID: 0}
+  itemDropPrefab: {fileID: 361262030}
 --- !u!114 &262483592
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -3580,7 +3580,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 5263ccce80ea0cf4784ad5bba2e82ea7, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  maxHealth: 30
+  maxHealth: 35
   healthBar: {fileID: 0}
   HealUseLeft: {fileID: 0}
 --- !u!61 &267774689
@@ -3640,7 +3640,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: da43bfe71d5695847bc970581afb7d3d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  maxHealth: 20
+  maxHealth: 35
   damageText: {fileID: 3942290882881464937, guid: 623b4dc0d453b0a4ea492efcfeb34f14, type: 3}
   popupText: {fileID: 2537049689612890050, guid: 623b4dc0d453b0a4ea492efcfeb34f14, type: 3}
   OnDeath:
@@ -3659,10 +3659,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: a93406cb25ad1904b9b9185e71e590f7, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  minDamage: 4
-  maxDamage: 6
-  damageInterval: 4
-  itemDropPrefab: {fileID: 0}
+  minDamage: 5
+  maxDamage: 8
+  damageInterval: 5
+  itemDropPrefab: {fileID: 361262030}
 --- !u!50 &267774692
 Rigidbody2D:
   serializedVersion: 4
@@ -3750,7 +3750,7 @@ MonoBehaviour:
   target: {fileID: 972044788}
   moveSpeed: 3
   chaseRange: 5
-  wanderRadius: 1
+  wanderRadius: 4
 --- !u!1 &270246505
 GameObject:
   m_ObjectHideFlags: 0
@@ -3929,9 +3929,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   minDamage: 2
-  maxDamage: 5
+  maxDamage: 3
   damageInterval: 5
-  itemDropPrefab: {fileID: 0}
+  itemDropPrefab: {fileID: 361262030}
 --- !u!58 &292197606
 CircleCollider2D:
   m_ObjectHideFlags: 0
@@ -5047,9 +5047,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   minDamage: 1
-  maxDamage: 5
+  maxDamage: 3
   damageInterval: 1
-  itemDropPrefab: {fileID: 0}
+  itemDropPrefab: {fileID: 361262030}
 --- !u!114 &355919736
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -5062,7 +5062,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: da43bfe71d5695847bc970581afb7d3d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  maxHealth: 16
+  maxHealth: 25
   damageText: {fileID: 3942290882881464937, guid: b4c9f1aa63c4043408d28af87fd4e41f, type: 3}
   popupText: {fileID: 2537049689612890050, guid: b4c9f1aa63c4043408d28af87fd4e41f, type: 3}
   OnDeath:
@@ -5194,7 +5194,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: da43bfe71d5695847bc970581afb7d3d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  maxHealth: 6
+  maxHealth: 10
   damageText: {fileID: 3942290882881464937, guid: b4c9f1aa63c4043408d28af87fd4e41f, type: 3}
   popupText: {fileID: 2537049689612890050, guid: b4c9f1aa63c4043408d28af87fd4e41f, type: 3}
   OnDeath:
@@ -5216,7 +5216,7 @@ MonoBehaviour:
   minDamage: 2
   maxDamage: 3
   damageInterval: 1
-  itemDropPrefab: {fileID: 0}
+  itemDropPrefab: {fileID: 361262030}
 --- !u!114 &360014471
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -5476,6 +5476,11 @@ PrefabInstance:
     m_AddedGameObjects: []
     m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: af5114e7ef4e76346bd7f39fb340b3d9, type: 3}
+--- !u!1 &361262030 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 7587282813691900094, guid: af5114e7ef4e76346bd7f39fb340b3d9, type: 3}
+  m_PrefabInstance: {fileID: 361262029}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &363966732
 GameObject:
   m_ObjectHideFlags: 0
@@ -5661,9 +5666,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   minDamage: 2
-  maxDamage: 5
+  maxDamage: 3
   damageInterval: 5
-  itemDropPrefab: {fileID: 0}
+  itemDropPrefab: {fileID: 361262030}
 --- !u!58 &374717326
 CircleCollider2D:
   m_ObjectHideFlags: 0
@@ -6736,7 +6741,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: da43bfe71d5695847bc970581afb7d3d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  maxHealth: 6
+  maxHealth: 10
   damageText: {fileID: 3942290882881464937, guid: b4c9f1aa63c4043408d28af87fd4e41f, type: 3}
   popupText: {fileID: 2537049689612890050, guid: b4c9f1aa63c4043408d28af87fd4e41f, type: 3}
   OnDeath:
@@ -6756,9 +6761,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   minDamage: 2
-  maxDamage: 8
+  maxDamage: 3
   damageInterval: 2
-  itemDropPrefab: {fileID: 0}
+  itemDropPrefab: {fileID: 361262030}
 --- !u!114 &492989602
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -20994,7 +20999,7 @@ MonoBehaviour:
   minDamage: 1
   maxDamage: 5
   damageInterval: 2
-  itemDropPrefab: {fileID: 0}
+  itemDropPrefab: {fileID: 361262030}
 --- !u!58 &775632765
 CircleCollider2D:
   m_ObjectHideFlags: 0
@@ -21760,7 +21765,7 @@ MonoBehaviour:
   minDamage: 1
   maxDamage: 5
   damageInterval: 2
-  itemDropPrefab: {fileID: 0}
+  itemDropPrefab: {fileID: 361262030}
 --- !u!58 &826772548
 CircleCollider2D:
   m_ObjectHideFlags: 0
@@ -22031,7 +22036,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: da43bfe71d5695847bc970581afb7d3d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  maxHealth: 6
+  maxHealth: 10
   damageText: {fileID: 3942290882881464937, guid: b4c9f1aa63c4043408d28af87fd4e41f, type: 3}
   popupText: {fileID: 2537049689612890050, guid: b4c9f1aa63c4043408d28af87fd4e41f, type: 3}
   OnDeath:
@@ -22050,10 +22055,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: a93406cb25ad1904b9b9185e71e590f7, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  minDamage: 2
+  minDamage: 1
   maxDamage: 3
   damageInterval: 1
-  itemDropPrefab: {fileID: 0}
+  itemDropPrefab: {fileID: 361262030}
 --- !u!114 &855787107
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -22067,9 +22072,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   target: {fileID: 972044788}
-  moveSpeed: 3
-  chaseRange: 5
-  wanderRadius: 5
+  moveSpeed: 2
+  chaseRange: 3
+  wanderRadius: 3
 --- !u!58 &855787108
 CircleCollider2D:
   m_ObjectHideFlags: 0
@@ -22392,7 +22397,7 @@ MonoBehaviour:
   minDamage: 1
   maxDamage: 5
   damageInterval: 1
-  itemDropPrefab: {fileID: 0}
+  itemDropPrefab: {fileID: 361262030}
 --- !u!114 &887551388
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -22405,7 +22410,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: da43bfe71d5695847bc970581afb7d3d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  maxHealth: 16
+  maxHealth: 25
   damageText: {fileID: 3942290882881464937, guid: b4c9f1aa63c4043408d28af87fd4e41f, type: 3}
   popupText: {fileID: 2537049689612890050, guid: b4c9f1aa63c4043408d28af87fd4e41f, type: 3}
   OnDeath:
@@ -22934,7 +22939,7 @@ MonoBehaviour:
   minDamage: 2
   maxDamage: 4
   damageInterval: 2
-  itemDropPrefab: {fileID: 0}
+  itemDropPrefab: {fileID: 361262030}
 --- !u!114 &929821563
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -23366,13 +23371,82 @@ PrefabInstance:
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
-    m_AddedComponents: []
+    m_AddedComponents:
+    - targetCorrespondingSourceObject: {fileID: 3271717211858461452, guid: d946df2f00487e24ebce9e158df514be, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 972044791}
+    - targetCorrespondingSourceObject: {fileID: 95925985196197516, guid: d946df2f00487e24ebce9e158df514be, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 972044794}
+    - targetCorrespondingSourceObject: {fileID: 95925985196197516, guid: d946df2f00487e24ebce9e158df514be, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 972044793}
   m_SourcePrefab: {fileID: 100100000, guid: d946df2f00487e24ebce9e158df514be, type: 3}
 --- !u!4 &972044788 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 5437259593952962580, guid: d946df2f00487e24ebce9e158df514be, type: 3}
   m_PrefabInstance: {fileID: 972044787}
   m_PrefabAsset: {fileID: 0}
+--- !u!114 &972044789 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 8965033247254607386, guid: d946df2f00487e24ebce9e158df514be, type: 3}
+  m_PrefabInstance: {fileID: 972044787}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 972044792}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f23d820eca8206a429e9152fdfbfcab5, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!1 &972044790 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 3271717211858461452, guid: d946df2f00487e24ebce9e158df514be, type: 3}
+  m_PrefabInstance: {fileID: 972044787}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &972044791
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 972044790}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a84be4b291dc32f40b8d1c24639f5170, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  attackArea: {fileID: 972044789}
+--- !u!1 &972044792 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 95925985196197516, guid: d946df2f00487e24ebce9e158df514be, type: 3}
+  m_PrefabInstance: {fileID: 972044787}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &972044793
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 972044792}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9dd9dc3a3051ae040b0d7c57cb310c12, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!114 &972044794
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 972044792}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 6688665c65a8d5f41ac6168d426e66d7, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  thrust: 2
+  knockTime: 0.3
 --- !u!1 &987892787
 GameObject:
   m_ObjectHideFlags: 0
@@ -24660,10 +24734,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: a93406cb25ad1904b9b9185e71e590f7, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  minDamage: 5
-  maxDamage: 15
+  minDamage: 3
+  maxDamage: 4
   damageInterval: 3
-  itemDropPrefab: {fileID: 0}
+  itemDropPrefab: {fileID: 361262030}
 --- !u!114 &1163694083
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -25301,8 +25375,8 @@ Transform:
   m_Children:
   - {fileID: 360014477}
   - {fileID: 855787104}
-  - {fileID: 1458203619}
   - {fileID: 492989599}
+  - {fileID: 1458203619}
   - {fileID: 887551383}
   - {fileID: 355919731}
   - {fileID: 826772544}
@@ -25695,7 +25769,7 @@ MonoBehaviour:
   minDamage: 3
   maxDamage: 3
   damageInterval: 10
-  itemDropPrefab: {fileID: 0}
+  itemDropPrefab: {fileID: 361262030}
 --- !u!212 &1272143450
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -26403,9 +26477,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   minDamage: 1
-  maxDamage: 5
+  maxDamage: 2
   damageInterval: 1
-  itemDropPrefab: {fileID: 0}
+  itemDropPrefab: {fileID: 361262030}
 --- !u!114 &1458203624
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -26418,7 +26492,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: da43bfe71d5695847bc970581afb7d3d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  maxHealth: 16
+  maxHealth: 25
   damageText: {fileID: 3942290882881464937, guid: b4c9f1aa63c4043408d28af87fd4e41f, type: 3}
   popupText: {fileID: 2537049689612890050, guid: b4c9f1aa63c4043408d28af87fd4e41f, type: 3}
   OnDeath:
@@ -27007,7 +27081,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   imageCooldown: {fileID: 756214948}
-  cooldown: 10
+  cooldown: 16
 --- !u!114 &1558373801
 MonoBehaviour:
   m_ObjectHideFlags: 0
