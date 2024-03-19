@@ -16,31 +16,17 @@ public class Player : MonoBehaviour
     private float attackDelay = 0.5f;
     private float lastAttackTime;
     private int itemCount = 0;
+    private bool isDamageBoosted = false;
 
     // Start is called before the first frame update
     void Start()
     {
         attackArea = transform.GetChild(0).GetComponent<AttackArea>();
-        //attackArea.DisableAttackArea();
+        attackArea.DisableAttackArea();
 
         animator = GetComponent<Animator>();
         rb = GetComponent<Rigidbody2D>();
 
-        //GameObject playerContainer = new GameObject("PlayerContainer");
-
-        //transform.parent = playerContainer.transform;
-
-        //if (animator == null)
-        //{
-        //    animator = playerContainer.AddComponent<Animator>();
-        //}
-
-        //if (rb == null)
-        //{
-        //    rb = playerContainer.AddComponent<Rigidbody2D>();
-        //}
-
-        //DontDestroyOnLoad(playerContainer);
         
     }
 
@@ -55,6 +41,12 @@ public class Player : MonoBehaviour
                 animator.SetBool("IsAttacking", isAttacking);
                 attackArea.EnableAttackArea();
                 lastAttackTime = Time.time;
+            }
+
+            if (Input.GetKeyDown(KeyCode.K) && !isDamageBoosted)
+            {
+                isDamageBoosted = true;
+                StartCoroutine(attackArea.BoostDamageForDuration(5f));
             }
             moveInput.x = Input.GetAxis("Horizontal");
             moveInput.y = Input.GetAxis("Vertical");
@@ -109,7 +101,8 @@ public class Player : MonoBehaviour
         isAttacking = false;
         animator.SetBool("IsAttacking", isAttacking);
         animator.SetTrigger("AttackFinished");
-        //attackArea.DisableAttackArea();
+        attackArea.DisableAttackArea();
+        isDamageBoosted = false;
 
     }
     void OnTriggerEnter2D(Collider2D other)

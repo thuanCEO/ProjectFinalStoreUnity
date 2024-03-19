@@ -12,29 +12,29 @@ public class BoostDamage : MonoBehaviour
         attackAreaScript = GetComponent<AttackArea>();
     }
 
-    void Update()
-    {
-        if (Input.GetKeyDown(KeyCode.K) && !isBoosted)
-        {
-            StartCoroutine(BoostDamageForDuration(5f));
-        }
-    }
+    //void Update()
+    //{
+    //    if (Input.GetKeyDown(KeyCode.K) && !isBoosted)
+    //    {
+    //        StartCoroutine(BoostDamageForDuration(5f));
+    //    }
+    //}
 
-    IEnumerator BoostDamageForDuration(float duration)
-    {
-        isBoosted = true;
+    //IEnumerator BoostDamageForDuration(float duration)
+    //{
+    //    isBoosted = true;
 
-        int previousDamage = attackAreaScript.GetDamage();
+    //    int previousDamage = attackAreaScript.GetDamage();
 
-        attackAreaScript.SetDamage(previousDamage + 5);
+    //    attackAreaScript.SetDamage(previousDamage + 5);
 
-        Debug.Log("Current Damage: " + attackAreaScript.GetDamage());
+    //    Debug.Log("Current Damage: " + attackAreaScript.GetDamage());
 
-        yield return new WaitForSeconds(duration);
+    //    yield return new WaitForSeconds(duration);
 
-        attackAreaScript.SetDamage(previousDamage);
-        isBoosted = false;
+    //    attackAreaScript.SetDamage(previousDamage);
+    //    isBoosted = false;
 
-        Debug.Log("Damage Restored: " + attackAreaScript.GetDamage());
-    }
+    //    Debug.Log("Damage Restored: " + attackAreaScript.GetDamage());
+    //}
 }
